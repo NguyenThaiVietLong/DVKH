@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     causeMenus.forEach(menu => menu.style.display = 'none');
                     
                     // Nếu là facebook-issue hoặc youtube-issue, hiển thị causes menu tương ứng
-                    if (['facebook-issue','connectwf-nointernet','no-connect','notseewifi-issue','wifi-bandwidth1','box-nopower1','box-nosignal1','box-nointernet1'].includes(sectionId)) {
+                    if (['facebook-issue','connectwf-nointernet','no-connect','notseewifi-issue','wifi-bandwidth1','box-nopower1','box-nosignal1','box-nointernet1','device-information1','device-information2','device-information3'].includes(sectionId)) {
                         // Ẩn tất cả causes menu trước
                         causeMenus.forEach(menu => menu.style.display = 'none');
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const submenu = this.nextElementSibling;
                 if (submenu && submenu.classList.contains('submenu')) {
                     // Nếu là wifi-slow hoặc wifi-cant-use, chỉ toggle submenu
-                    if (['wifi-slow', 'wifi-cant-use', 'wifi-bandwidth','box-nopower','box-nosignal','box-nointernet' ].includes(sectionId)) {
+                    if (['wifi-slow', 'wifi-cant-use', 'wifi-bandwidth','box-nopower','box-nosignal','box-nointernet','device-information' ].includes(sectionId)) {
                         // Ẩn tất cả submenu khác cùng cấp
                         const siblingSubmenus = this.closest('ul').querySelectorAll('.submenu');
                         siblingSubmenus.forEach(sub => {

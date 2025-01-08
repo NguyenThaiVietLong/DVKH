@@ -27,6 +27,26 @@ body {
     margin-left: 300px;
     padding: 20px;
     flex: 1;
+    
+}
+.index{
+    background-color: #eee;
+    padding:10px;
+    border-radius: 10px;
+
+}
+.content a {
+    text-decoration:none;
+    color: #000;
+    margin:10px;
+}
+
+.content a:hover {
+    text-decoration:none;
+    color: #fff;
+    background-color: #ee8402;
+    border-radius: 10px;
+    padding:5px;
 }
 
 .menu h3 {
@@ -43,13 +63,9 @@ body {
     margin: 10px 0;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    color: #0645ad;
-}
 
 .menu ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .tab {
@@ -162,25 +178,37 @@ section {
 }
 
 /* Thêm hiệu ứng hover cho các link trong sidebar */
-.menu a {
+.menu ul li a {
     display: block;
     padding: 5px 0;
-    color: #2c3e50;
-    text-decoration: none;
+    color:#3498db; 
     transition: all 0.3s ease;
+    text-decoration: none;
+    
 }
 
+.menu ul li a:focus  {
+   background-color: #ee8402;
+   color:#fff;
+   padding:5px;
+   border-radius: 10px;
+    
+}
+
+
 .menu a:hover {
-    color: #3498db;
+    color:#3498db; 
     padding-left: 5px;
     background-color: rgba(52, 152, 219, 0.1);
 }
 
 /* Style cho active link */
 .menu a.active {
-    color: #3498db;
+     color: #2980b9; */
     font-weight: bold;
+
 }
+
 
 /* Thêm màu sắc khác nhau cho các cấp menu */
 .submenu a {
@@ -217,9 +245,9 @@ section {
 }
 
 /* Thêm icons cho các loại menu khác nhau */
-.submenu > li > a::before {
+/* .submenu > li > a::before {
     content: "▸ ";
-}
+} */
 
 .submenu-questions > li > a::before {
     content: "❓ ";
@@ -238,6 +266,7 @@ section {
     margin-left: 20px;
     list-style: none;
     padding-left: 0;
+    
 }
 
 .causes-menu li {
