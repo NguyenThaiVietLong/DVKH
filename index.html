@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hướng dẫn xử lý sự cố</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Danh mục lỗi</h2>
+        <div class="menu">
+          <h3>Lỗi WiFi</h3>
+          <ul>
+            <li>
+              <a href="#" data-section="wifi-slow">WiFi chậm, chập chờn</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="facebook-issue"
+                    >Facebook không load được bảng tin / Youtube không load được
+                    video</a
+                  >
+                  <ul class="causes-menu" id="facebook-causes">
+                    <li>
+                      <a href="#" onclick="showContent('cause1')"
+                        >Số lượng thiết bị truy cập quá tải năng lực xử lý
+                        modem</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause2')"
+                        >Vị trí sử dụng của khách hàng hoặc vị trí lắp đặt modem
+                        không tối ưu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause3')"
+                        >Nhiễu do thiết bị điện tử, vật cản hoặc do Wi-Fi lân
+                        cận</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Thêm các mục khác tương tự -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="wifi-cant-use"
+                >Không sử dụng được WiFi</a
+              >
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="connectwf-nointernet"
+                    >Kết nối được WiFi nhưng không truy cập được Internet</a
+                  >
+                  <ul class="causes-menu" id="cnwf-nointernet-causes">
+                    <li>
+                      <a href="#" onclick="showContent('cause4')"
+                        >Thiết bị của khách hàng bị chặn trên HiFPT</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause5')"
+                        >Thiết bị modem không có Internet</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" data-section="no-connect"
+                    >Không kết nối được WiFi</a
+                  >
+                  <ul class="causes-menu" id="seewf-noconnect-causes">
+                    <li>
+                      <a href="#" onclick="showContent('cause6')"
+                        >Thiết bị Modem Wi-Fi treo</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause7')"
+                        >Kết nối không đúng tên wifi và mật khẩu</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="#" onclick="showContent('cause8')"
+                        >Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+                        không thu được sóng</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" data-section="notseewifi-issue"
+                    >Không thấy tên WiFi</a
+                  >
+                  <ul class="causes-menu" id="notseewifi-causes">
+                    <li>
+                      <a href="#" onclick="showContent('cause9')"
+                        >Thiết bị modem chưa được bật nguồn hoặc lỏng ổ điện</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause10')"
+                        >Đèn WLAN trên Modem Wi-Fi không sáng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause11')"
+                        >Thiết bị Modem không phát sóng Wi-Fi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause12')"
+                        >Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+                        không thu được sóng</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="wifi-bandwidth"
+                >Mạng chậm, kiểm tra băng thông không đúng cam kết</a
+              >
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="wifi-bandwidth1"
+                    >KHG kiểm tra bằng ứng dụng Speedtest không đủ băng thông</a
+                  >
+                  <ul class="causes-menu" id="wifi-bandwidth2">
+                    <li>
+                      <a href="#" onclick="showContent('cause13')"
+                        >Khách hàng đo test bắt sai Wi-Fi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause14')"
+                        >Nhiều thiết bị truy cập, sử dụng full băng thông</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause15')"
+                        >Khách hàng bắt sai Wi-Fi</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Lỗi HDBox</h3>
+          <ul>
+            <li>
+              <a href="#" data-section="box-nopower">Box không lên nguồn</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="box-nopower1">Box không sáng đèn</a>
+                  <ul class="causes-menu" id="box-nopower2">
+                    <li>
+                      <a href="#" onclick="showContent('cause16')"
+                        >Ổ cắm điện/nguồn Box nhà khách hàng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause17')"
+                        >Cắm sai jack nguồn Box</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause18')"
+                        >Chưa bật power off trên remote Box</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Thêm các mục khác tương tự -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="box-nosignal"
+                >Box lên nguồn nhưng màn hình đen hoặc không có tín hiệu</a
+              >
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="box-nosignal1"
+                    >TV màn hình đen báo lỗi Signal</a
+                  >
+                  <ul class="causes-menu" id="box-nosignal2">
+                    <li>
+                      <a href="#" onclick="showContent('cause19')"
+                        >Chưa cắm hoặc lỏng cổng HDMI, AV trên cả Box và
+                        Tivi.</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause20')"
+                        >Cắm nhầm cổng HDMI, AV</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="box-nointernet"
+                >Box lên nguồn nhưng báo mất kết nối Internet</a
+              >
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="box-nointernet1"
+                    >Màn hình thông báo lỗi kết nối dịch vụ Box IPTV / Box
+                    OTT</a
+                  >
+                  <ul class="causes-menu" id="box-nointernet2">
+                    <li>
+                      <a href="#" onclick="showContent('cause21')">
+                        Box không nhận IP
+                        <ul>
+                          <li>Box OTT (nháy trắng)</li>
+                          <li>Box IPTV (nháy đỏ)</li>
+                          <li>Lỗi kết nối wifi (Box OTT)</li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause22')"
+                        >Box có IP ( đèn trắng đứng)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause23')"
+                        >Thiết bị Modem Wi-Fi treo (Không kết nối được WiFi hoặc
+                        kết nối được WiFi nhưng không truy cập được Internet)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="showContent('cause24')"
+                        >Box treo/đứng hoặc nhận sai IP</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Hướng dẫn xử lý sự cố</h1>
+        <div id="wifi-slow" class="content-section">
+          <h2>WiFi chậm, chập chờn</h2>
+          <ul>
+            <li>
+              Facebook không load được bảng tin / Youtube không load được video
+            </li>
+          </ul>
+        </div>
+
+        <div id="facebook-issue" class="content-section">
+          <h2>
+            Facebook không load được bảng tin / Youtube không load được video
+          </h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh chị sử dụng khoảng bao nhiêu thiết bị kết nối wifi trong nhà
+                mình ạ?
+              </li>
+              <li>
+                Anh chị đang sử dụng wifi ở gần vị trí modem hay xa modem? Có
+                vật cản như ( tường, gỗ, kính… )hay không ạ?
+              </li>
+              <li>
+                Anh chị kiểm tra giúp em vị trí đặt modem có gần các thiết bị
+                như Loa, lò vi sóng, hồ cá.. hay bị khuất không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause1" class="content-section">
+          <h2>
+            Nguyên nhân: Số lượng thiết bị truy cập quá tải năng lực xử lý modem
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kiểm tra số lượng thiết bị kết nối, nếu quá tải tiến hành đổi
+                pass wifi, giải thích với khách hàng về năng lực thiết bị, tư
+                vấn KHG trang bị modem chịu tải cao hoặc lắp thêm AP chia tải
+              </li>
+            </ul>
+           
+          </div>
+            <h3>Cách giải quyết chi tiết:</h3>
+            <h4>Bước 1: Đăng nhập Mỹ Bảo</h4>
+            <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
+            
+
+            <h4>Bước 2: Nhập Mã OTP</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
+           
+
+            <h4>Bước 3: Nhập SHĐ</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
+            
+            <h4>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
+            
+            <h4>Bước 5: Kiểm tra số lượng thiết bị đang kết nối</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục KT số lượng thiết bị đang kết nối.png">
+            
+
+        </div>
+
+        <div id="cause2" class="content-section">
+          <h2>
+            Nguyên nhân: Vị trí sử dụng của khách hàng hoặc vị trí lắp đặt modem
+            không tối ưu
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Đảm bảo cường độ sóng vị trí khách hàng sử dụng phải có công
+                suất tối thiểu ≥-65dBm bằng cách di chuyển thiết bị hoặc tư vấn
+                lắp thêm AP
+              </li>
+            </ul>
+            
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Bước 1: Đăng nhập Mỹ Bảo</h4>
+          <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
+          
+
+          <h4>Bước 2: Nhập Mã OTP</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
+         
+
+          <h4>Bước 3: Nhập SHĐ</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
+          
+          <h4>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
+          
+          <h4>Bước 5: Kiểm tra thông số RSSI</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Thông số RSSI ( Cường độ sóng wifi 2 băng tần 2.4G & 5G ).png">
+          
+
+        </div>
+
+        <div id="cause3" class="content-section">
+          <h2>Nguyên nhân: Nhiễu do thiết bị điện tử hoặc do Wi-Fi lân cận</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Hạn chế sử dụng băng tần 2.4GHz và ưu tiên sử dụng 5GHz sẽ cải
+                thiệt chất lượng Wi-Fi, trong trường hợp thiết bị không hỗ trợ
+                hoặc không đồng ý nâng cấp thiết bị thì tối ưu Wi-Fi bằng chỉnh
+                sang chế độ auto kênh sóng
+              </li>
+            </ul>
+           
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Bước 1: Đăng nhập Mỹ Bảo</h4>
+          <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
+          
+
+          <h4>Bước 2: Nhập Mã OTP</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
+         
+
+          <h4>Bước 3: Nhập SHĐ</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
+          
+          <h4>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
+          
+          <h4>Bước 5: Kiểm tra thiết bị kết nối 2.4G & 5G</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục kiểm tra thiết bị kết nối 2.4G, or 5G.png">
+          
+        </div>
+
+        <div id="wifi-cant-use" class="content-section">
+          <h2>Không sử dụng được wifi</h2>
+          <ul>
+            <li>Kết nối được WiFi nhưng không truy cập được Internet</li>
+            <li>Không kết nối được WiFi</li>
+            <li>Không thấy tên WiFi</li>
+          </ul>
+        </div>
+
+        <div id="connectwf-nointernet" class="content-section">
+          <h2>Kết nối được WiFi nhưng không truy cập được Internet</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>Anh/Chị bị tất cả thiết bị hay 1 thiết bị nào đó ạ ?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause4" class="content-section">
+          <h2>Nguyên nhân: Thiết bị của khách hàng bị chặn trên HiFPT</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Kiểm tra và bỏ chặn thiết bị trên HiFPT</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/1.jpg">
+          
+
+          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/2.jpg">      
+         
+
+          <h4>Bước 3: Vào phần Chặn thiết bị</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/3.jpg">      
+          
+          <h4>Bước 4: Cho phép thiết bị kết nối Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/4.jpg"> 
+        </div>
+
+        <div id="cause5" class="content-section">
+          <h2>Nguyên nhân: Thiết bị modem không có Internet</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Rút nguồn và cắm lại</h4>
+        </div>
+
+        <div id="no-connect" class="content-section">
+          <h2>Không kết nối được WiFi</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị kết nối đúng tên wifi và mật khẩu nhà mình chưa ạ?
+              </li>
+              <li>
+                Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause6" class="content-section">
+          <h2>Nguyên nhân: Thiết bị Modem Wi-Fi treo</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Rút nguồn và cắm lại</h4>
+        </div>
+
+        <div id="cause7" class="content-section">
+          <h2>Nguyên nhân: Kết nối không đúng tên wifi và mật khẩu</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kiểm tra lại tên và mât khẩu wifi trên Hifpt, quên kết nối và
+                kết nối lại wifim
+              </li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/1.jpg">
+          
+
+          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/2.jpg">      
+         
+        </div>
+
+        <div id="cause8" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+            không thu được sóng
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                So sánh với thiết bị khác, dùng điện thoại phát WiFi bằng 4G để
+                test
+              </li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
+          
+
+          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
+        
+          <h4>Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
+         
+        </div>
+
+        <div id="notseewifi-issue" class="content-section">
+          <h2>Không thấy tên WiFi</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị kiểm tra thiết bị modem đã được cắm nguồn hoặc bật nút
+                nguồn chưa ?
+              </li>
+              <li>Đèn WLAN (2.4 - 5G) của modem có sáng không ạ ?</li>
+              <li>
+                Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause9" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị modem chưa được bật nguồn hoặc lỏng ổ điện
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Rút nguồn và cắm lại</h4>
+        </div>
+
+        <div id="cause10" class="content-section">
+          <h2>Nguyên nhân: Đèn WLAN trên Modem Wi-Fi không sáng</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+              <li>Bật WiFi trên ứng dụng HiFPT</li>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <ol>
+            <li><h3>Cách giải quyết chi tiết:</h3>
+                <h4>Rút nguồn và cắm lại</h4></li>
+          <li>
+          <h4>Bật Wifi trên ứng dụng HiFPT</h4>
+          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
+          
+
+          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
+        
+          <h4>Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Bật WiFi" </h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
+        </li>
+        </ol>
+        </div>
+
+        <div id="cause11" class="content-section">
+          <h2>Nguyên nhân: Thiết bị Modem không phát sóng Wi-Fi</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Rút nguồn và cắm lại</h4>
+        </div>
+
+        <div id="cause12" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+            không thu được sóng
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                So sánh với thiết bị khác, dùng điện thoại phát WiFi bằng 4G để
+                test
+              </li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
+          
+
+          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
+        
+          <h4>Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
+         
+        </div>
+
+        <div id="wifi-bandwidth" class="content-section">
+          <h2>Mạng chậm, kiểm tra băng thông không đúng cam kết</h2>
+          <ul>
+            <li>KHG kiểm tra bằng ứng dụng Speedtest không đủ băng thông</li>
+          </ul>
+        </div>
+
+        <div id="wifi-bandwidth1" class="content-section">
+          <h2>KHG kiểm tra bằng ứng dụng Speedtest không đủ băng thông</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị tải ứng dụng Speedtest trên Chplay ( hệ điều hành
+                android ), Appstore ( hệ điều hành IOS ) và kết nối điện thoại
+                hỗ trợ wifi5 hoặc wifi6 đo kiểm lại băng thông giúp ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra có thiết bị nào khác đang sử dụng nhiều băng
+                thông không? Anh chị kiểm tra xem có ai đang tải file dung lượng
+                lớn, xem video, hoặc chơi game trực tuyến gây tiêu hao băng
+                thông hay không ?
+              </li>
+              <li>
+                Anh/Chị đang kết nối có đang kết nối đúng wifi nhà mình chưa ạ ?
+                Vị trí sử dụng wifi có gần modem không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause13" class="content-section">
+          <h2>Nguyên nhân: Khách hàng đo test bắt sai Wi-Fi</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Tải ứng dụng Speedtest</li>
+              <li>Bắt wifi 5GHz để đo hoặc cắm lan trực tiếp</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <ol>
+          <li><h4>Tải Speedtest</h4>
+          <h4>Vào AppStore/CHPlay, tải ứng dụng Speedtest</h4> 
+          <img src="./Hình ảnh/Hình ảnh/Mạng chậm không đúng cam kết/Huonq xly 3.png"> </li>
+          
+          <li><h4>Bắt WiFi 5GHz để đo hoặc cắm lan trực tiếp </h4>
+            <ul>
+            <li> Bắt Wifi 5GHz</li>
+            <ul><li>Thứ 1: Di chuyển gần modem, bé hơn 3m, không vật cản </li>
+                <li>Thứ 2, tắt mở wifi trên thiết bị của KH (điện thoại/PC/Laptop)</li>
+                <li>Thứ 3, Kết nối wifi 5G của modem chính </li></ul>
+            <li>Cắm Lan trực tiếp</li>
+            
+
+            
+            </ol>
+        </li>
+        </ol>
+        </div>
+
+        <div id="cause14" class="content-section">
+          <h2>Nguyên nhân: Nhiều thiết bị truy cập, sử dụng full băng thông</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Rút nguồn và cắm lại</h4>
+        </div>
+
+        <div id="cause15" class="content-section">
+          <h2>Nguyên nhân: Khách hàng bắt sai Wi-Fi</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+          </div>
+          <ol>
+            <li> Bắt Wifi 5GHz</li>
+            <ul>
+            <li>Thứ 1: Di chuyển gần modem, bé hơn 3m, không vật cản </li>
+            <li>Thứ 2, tắt mở wifi trên thiết bị của KH (điện thoại/PC/Laptop)</li>
+            <li>Thứ 3, Kết nối wifi 5G của modem chính </li>
+            </ul>
+            <li>Lan trực tiếp</li>
+        </ol>
+        </div>
+
+        <div id="box-nopower" class="content-section">
+          <h2>Box không lên nguồn</h2>
+          <ul>
+            <li>Box không sáng đèn</li>
+          </ul>
+        </div>
+
+        <div id="box-nopower1" class="content-section">
+          <h2>Box không sáng đèn</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>Anh chị kiểm tra nguồn điện, nguồn box đã cắm đúng chưa ?</li>
+              <li>
+                Anh chị kiểm tra đã cắm đúng jack nguồn box truyền hình chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra đã nhấn nút nguồn power off trên remote Box?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause16" class="content-section">
+          <h2>Nguyên nhân: Ổ cắm điện/nguồn Box nhà khách hàng</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kiểm tra lại ổ cắm điện đang cắm hoặc thử chuyển sang một ổ cắm
+                khác.
+              </li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <h4>Rút nguồn và cắm lại</h4>
+        </div>
+
+        <div id="cause17" class="content-section">
+          <h2>Nguyên nhân: Cắm sai jack nguồn Box</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Cắm lại đúng cổng jack nguồn Box</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <img src="./Hình ảnh/Hình ảnh/Box không lên nguồn/hương xử lý 2.png">
+
+        </div>
+
+        <div id="cause18" class="content-section">
+          <h2>Nguyên nhân: Chưa bật power off trên remote Box</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Nhấn nút nguồn trên remote box</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <img src="./Hình ảnh/Hình ảnh/Box không lên nguồn/Hướng xử lý 3.png">
+        </div>
+
+        <div id="box-nosignal" class="content-section">
+          <h2>Box lên nguồn nhưng màn hình đen hoặc không có tín hiệu</h2>
+          <ul>
+            <li>TV màn hình đen báo lỗi Signal</li>
+          </ul>
+        </div>
+
+        <div id="box-nosignal1" class="content-section">
+          <h2>TV màn hình đen báo lỗi Signal</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh chị kiểm tra giúp em đã gắn dây HDMI, AV vào trên box truyền
+                hình và tivi chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra giúp em đang cắm cổng HDMI, AV cổng số mấy trên
+                tivi ạ ?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause19" class="content-section">
+          <h2>
+            Nguyên nhân: Chưa cắm hoặc lỏng cổng HDMI, AV trên cả Box và Tivi.
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Hướng dẫn kiểm tra kết nối</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng không có tín hiệu/Hương xử lý 1.png"> 
+        </div>
+
+        <div id="cause20" class="content-section">
+          <h2>Nguyên nhân: Cắm nhầm cổng HDMI, AV</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Hướng dẫn thao tác chuyển cổng tín hiệu</li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng không có tín hiệu/hướng xử lý 2.png">
+        </div>
+
+        <div id="box-nointernet" class="content-section">
+          <h2>Box lên nguồn nhưng báo mất kết nối Internet</h2>
+          <ul>
+            <li>Màn hình thông báo lỗi kết nối dịch vụ Box IPTV / Box OTT</li>
+          </ul>
+        </div>
+
+        <div id="box-nointernet1" class="content-section">
+          <h2>Màn hình thông báo lỗi kết nối dịch vụ Box IPTV / Box OTT</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh chị kiểm tra giúp em đã gắn dây LAN từ box truyền hình đến
+                modem , bộ phát wifi FPT ( nếu có ), bộ chia ( switch nếu có )
+                chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra các thiết bị trong nhà có kết nối được wifi
+                bình thường không ạ ? ( Trường hợp box OTT kết nối wifi sử dụng
+                truyền hình )
+              </li>
+              <li>
+                Anh chị kiểm tra xem có điều khiển được box truyền hình không ạ
+                ?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause21" class="content-section">
+          <h2>
+            Nguyên nhân: Box không nhận IP
+            <ul>
+              <li>Box OTT (nháy trắng)</li>
+              <li>Box IPTV (nháy đỏ)</li>
+              <li>Lỗi kết nối wifi (Box OTT)</li>
+            </ul>
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Kiểm tra đèn LAN trên thiết bị Modem</li>
+              <li>Kiểm tra kết nối WiFi trên box</li>
+            </ul>
+          </div>
+          <h3>Cách xử lý chi tiết:</h3>
+          <ol>
+            <li>Kiểm tra đèn LAN trên thiết bị Modem</li>
+            <h4>Hướng dẫn kiểm tra kết nối Lan</h4>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xủ lý 1_IPTVI.jpg">
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xử lý 1_OTT.jpg">
+            <li>Kiểm tra kết nối WiFi trên box</li>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/hướng xử lý 5.png">
+          </ol>
+        </div>
+
+        <div id="cause22" class="content-section">
+          <h2>Nguyên nhân: Box có IP ( đèn trắng đứng)</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Phân đoạn kết nối internet của Box (Modem - thiết bị thứ 3 - Box)
+              </li>
+            </ul>
+          </div>
+          <h3>Cách xử lý chi tiết</h3>
+          <h4>Rút toàn bộ LAN của modem và cắm lại</h4>
+        </div>
+
+        <div id="cause23" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị Modem Wi-Fi treo (Không kết nối được WiFi hoặc kết nối được WiFi nhưng không truy cập được Internet)
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại Modem và Box</li>
+            </ul>
+          </div>
+          <h3>Cách xử lý chi tiết</h3>
+          <h4>Rút điện và cắm lại Modem và box</h4>
+        </div>
+
+        <div id="cause24" class="content-section">
+          <h2>Nguyên nhân: Box treo/đứng hoặc nhận sai IP</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động và cài đặt IP cho Box</li>
+            </ul>
+          </div>
+          <h3>Cách xử lý chi tiết</h3>
+          <ol>
+            <li>Trường hợp Box IPTV: Chọn Cài đặt -> Cấu hình IP</li>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/HƯƠNG XỬ LÝ 4.png">
+            <li>Trường hợp Box OTT: Chọn cài đặt -> Chọn DHCP</li>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xử lý 4.png">
+          </ol>
+          
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
