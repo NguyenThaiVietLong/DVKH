@@ -118,7 +118,7 @@ h2 {
 }
 
 h3 {
-    color: #666;
+    color: #e64444;
     /* margin: 10px 0; */
     font-size:13px;
 }
@@ -179,11 +179,11 @@ section {
 }
 
 .problem-details li {
-    margin: 8px 0;
+    /* margin: 5px 0; */
     line-height: 1.6;
 }
 .problem-details a {
-    color:#444;
+    color:#36a3af;
 }
 
 /* Thêm hiệu ứng hover cho các link trong sidebar */
@@ -405,5 +405,7 @@ img {
     text-decoration:underline;
 }
 .content1{
-    padding:5px;
+    padding:10px;
+    margin:5px;
+    
 }
