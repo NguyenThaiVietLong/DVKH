@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family:Aptos;
     line-height: 1.6;
 }
 
@@ -107,27 +108,32 @@ body {
 
 h1 {
     color: #333;
-    margin-bottom: 30px;
+    /* margin-bottom: 20px; */
 }
 
 h2 {
     color: #444;
-    margin-bottom: 20px;
+    /* margin-bottom: 5px; */
+    font-size:15px;
 }
 
 h3 {
     color: #666;
-    margin: 15px 0;
+    /* margin: 10px 0; */
+    font-size:13px;
 }
 
 h4, h5 {
     color: #777;
-    margin: 10px 0;
+    margin: 5px 0;
+}
+li{
+    font-size:15px;
 }
 
 ul, ol {
     margin-left: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 section {
@@ -156,25 +162,28 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.problem-details {
-    margin-top: 20px;
-}
+/* .problem-details {
+    /* margin-top: 20px; */
+} */
 
 .problem-details h3 {
     color: #2c3e50;
-    margin: 20px 0 10px 0;
-    padding-bottom: 5px;
+    
+    /* padding-bottom: 5px; */
     border-bottom: 2px solid #eee;
 }
 
 .problem-details ul {
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .problem-details li {
     margin: 8px 0;
     line-height: 1.6;
+}
+.problem-details a {
+    color:#444;
 }
 
 /* Thêm hiệu ứng hover cho các link trong sidebar */
@@ -306,17 +315,6 @@ section {
         font-size: 0.9em;
     }
 
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1.3em;
-    }
-
-    h3 {
-        font-size: 1.1em;
-    }
 
     .problem-section {
         padding: 15px;
@@ -346,3 +344,66 @@ img {
     margin: 0 auto;
   }
 
+/* Wifi5 */
+.entry {
+    word-wrap: break-word;
+    line-height: 22px;
+}
+.entry p{
+    margin-bottom: 20px;
+}
+
+.box.shadow {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(153, 153, 153, 0.6);
+}
+.box.shadow div.box-inner-block {
+    padding: 0;
+}
+.box div.box-inner-block {
+   
+    min-height: 50px;
+}
+.box {
+    padding: 20px;
+    background-color: #F6F6F6;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.entry h4 {
+    font-size: 18px;
+}
+
+.entry ol, .entry ul {
+    margin: 0 0 20px 15px;
+    font-size:15px;
+}
+
+.entry ol li {
+    list-style: outside decimal;
+}
+
+.entry li {
+    margin: 10px;
+}
+
+/* Wifi6 */
+.detail-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.detail-content p {
+    line-height: 28px !important;
+    color: #090e1b !important;
+    font-size: 16px !important;
+}
+.problem-details a 
+{
+    padding:5px;
+    font-size:15px;
+    text-decoration:underline;
+}
+.content1{
+    padding:5px;
+}

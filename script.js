@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Ẩn tất cả các section và causes-menu khi trang web load
     const sections = document.querySelectorAll('.content-section');
-    console.log(sections)
+    
     
     const causeMenus = document.querySelectorAll('.causes-menu');
     
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Xử lý click vào issues
             if (sectionId) {
                 const selectedSection = document.getElementById(sectionId);
-                console.log('selectedSection:', selectedSection)
+               
                 const isVisible = selectedSection && selectedSection.style.display === 'block';
                 // console.log(isVisible)
 

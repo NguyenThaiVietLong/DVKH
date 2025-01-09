@@ -11,7 +11,7 @@
       <div class="sidebar">
         <h2>Danh mục lỗi</h2>
         <div class="menu">
-          <h3>Lỗi WiFi</h3>
+          <h3>Lỗi Internet</h3>
           <ul>
             <li>
               <a href="#" data-section="wifi-slow">1. WiFi chậm, chập chờn</a>
@@ -49,7 +49,7 @@
               <a href="#" data-section="wifi-cant-use"
                 >2. Không sử dụng được WiFi</a
               >
-              <ul class="submenu">
+              <!-- <ul class="submenu">
                 <li>
                   <a href="#" data-section="connectwf-nointernet"
                     >2.1 Kết nối được WiFi nhưng không truy cập được Internet</a
@@ -119,7 +119,7 @@
                     </li>
                   </ul>
                 </li>
-              </ul>
+              </ul> -->
             </li>
             <li>
               <a href="#" data-section="wifi-bandwidth"
@@ -152,7 +152,7 @@
             </li>
           </ul>
 
-          <h3>Lỗi HDBox</h3>
+          <h3>Lỗi Box truyền hình</h3>
           <ul>
             <li>
               <a href="#" data-section="box-nopower">1. Box không lên nguồn</a>
@@ -247,7 +247,7 @@
               </ul>
             </li>
           </ul>
-          <h3>Thông tin</h3>
+          <h3>Tra cứu thông tin</h3>
           <ul>
             <li>
               <a href="#" data-section="device-information">1. Thông tin thiết bị</a>
@@ -257,8 +257,21 @@
                   <ul class="causes-menu" id="box-nopower2">
                     <li>
                       <a href="#" onclick="showContent('cause25')"
-                        >1.1.1 Modem AC1000Z</a
-                      >
+                        >1.1.1 Modem AC1000Cv2</a>
+                      <a href="#" onclick="showContent('cause26')"
+                        >1.1.2 Modem AC1000Cv3</a>
+                      <a href="#" onclick="showContent('cause27')"
+                        >1.1.3 Modem AC1000F</a>
+                      <a href="#" onclick="showContent('cause28')"
+                        >1.1.4 Modem AC1000HI</a>
+                      <a href="#" onclick="showContent('cause29')"
+                        >1.1.5 Modem AC1000Z</a>
+                      <a href="#" onclick="showContent('cause30')"
+                        >1.1.6 Modem AC1200C</a>
+                      <a href="#" onclick="showContent('cause31')"
+                        >1.1.7 Modem AC1200Z</a>
+                      
+                      
                     </li>
                     <!-- <li>
                       <a href="#" onclick="showContent('cause17')"
@@ -277,9 +290,29 @@
                   <a href="#" data-section="device-information2">1.2 Wifi 6</a>
                   <ul class="causes-menu" id="box-nopower2">
                     <li>
-                      <a href="#" onclick="showContent('cause26')"
-                        >1.2.1 Modem AX3000GZ</a
-                      >
+                      <a href="#" onclick="showContent('cause32')"
+                        >1.2.1 Modem AX1500C</a>
+                      <a href="#" onclick="showContent('cause33')"
+                        >1.2.2 Modem AX1800AZ</a>
+                      <a href="#" onclick="showContent('cause34')"
+                        >1.2.3 Modem AX1800C</a>
+                      <a href="#" onclick="showContent('cause35')"
+                        >1.2.4 Modem AX1800GZ</a>
+                      <a href="#" onclick="showContent('cause36')"
+                        >1.2.5 Modem AX3000AZ</a>
+                      <a href="#" onclick="showContent('cause37')"
+                        >1.2.6 Modem AX3000C</a>
+                      <a href="#" onclick="showContent('cause38')"
+                        >1.2.7 Modem AX3000Cv2</a>
+                      <a href="#" onclick="showContent('cause39')"
+                        >1.2.8 Modem AX3000GZ</a>
+                      <a href="#" onclick="showContent('cause40')"
+                        >1.2.9 Modem AX3000GZv2</a>
+                      <a href="#" onclick="showContent('cause41')"
+                        >1.2.10 Modem AX3000HI</a>
+                      <a href="#" onclick="showContent('cause42')"
+                        >1.2.11 Modem AX8000C</a>
+
                     </li>
                     <!-- <li>
                       <a href="#" onclick="showContent('cause17')"
@@ -298,9 +331,28 @@
                   <a href="#" data-section="device-information3">1.3 Router</a>
                   <ul class="causes-menu" id="box-nopower2">
                     <li>
-                      <a href="#" onclick="showContent('cause27')"
-                        >1.3.1 Router Vigor300B</a
-                      >
+                      <a href="#" onclick="showContent('cause43')"
+                        >1.3.1 Aruba Instant On AP11</a>
+                      <a href="#" onclick="showContent('cause44')"
+                        >1.3.2 EdgeRouter X</a>
+                      <a href="#" onclick="showContent('cause45')"
+                        >1.3.3 Mikrotik RB760iGS</a>
+                      <a href="#" onclick="showContent('cause46')"
+                        >1.3.4 Mikrotik RB4011iGSRM</a>
+                      <a href="#" onclick="showContent('cause47')"
+                        >1.3.5 Unifi AC Lite</a>
+                      <a href="#" onclick="showContent('cause48')"
+                        >1.3.6 Unifi AC LR</a>
+                      <a href="#" onclick="showContent('cause49')"
+                        >1.3.7 Unifi AC Pro</a>
+                      <a href="#" onclick="showContent('cause50')"
+                        >1.3.8 Vigor 300B</a>
+                      <a href="#" onclick="showContent('cause51')"
+                        >1.3.9 Vigor2927</a>
+                      
+                    
+                        
+                    
                     </li>
                     <!-- <li>
                       <a href="#" onclick="showContent('cause17')"
@@ -326,7 +378,7 @@
       </div>
 
       <div class="content">
-        <h1>Hướng dẫn xử lý sự cố</h1>
+        <!-- <h1>Hướng dẫn xử lý sự cố</h1> -->
         <div id="wifi-slow" class="content-section">
           <h2>WiFi chậm, chập chờn</h2>
           <ul>
@@ -428,24 +480,33 @@
             
           </div>
           <h3>Cách giải quyết chi tiết:</h3>
-          <h4>Bước 1: Đăng nhập Mỹ Bảo</h4>
+
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1121">Bước 1: Đăng nhập Mỹ Bảo</a><br>
+            <a href="#1122">Bước 2: Nhập Mã OTP</a><br>
+            <a href="#1123">Bước 3: Nhập SHĐ</a><br>
+            <a href="#1124">Bước 4: Chọn vào mục Thiết bị đang kết nối</a><br>
+            <a href="#1125">Bước 5: Kiểm tra thông số RSSI</a><br>
+          </div>
+          <h4 id="1121">Bước 1: Đăng nhập Mỹ Bảo</h4>
           <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
           
 
-          <h4>Bước 2: Nhập Mã OTP</h4>
+          <h4 id="1122">Bước 2: Nhập Mã OTP</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
          
 
-          <h4>Bước 3: Nhập SHĐ</h4>
+          <h4 id="1123">Bước 3: Nhập SHĐ</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
           
-          <h4>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+          <h4 id="1124">Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
           
-          <h4>Bước 5: Kiểm tra thông số RSSI</h4>
+          <h4 id="1125">Bước 5: Kiểm tra thông số RSSI</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Thông số RSSI ( Cường độ sóng wifi 2 băng tần 2.4G & 5G ).png">
           
@@ -467,47 +528,121 @@
            
           </div>
           <h3>Cách giải quyết chi tiết:</h3>
-          <h4>Bước 1: Đăng nhập Mỹ Bảo</h4>
+
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1131">Bước 1: Đăng nhập Mỹ Bảo</a><br>
+            <a href="#1132">Bước 2: Nhập Mã OTP</a><br>
+            <a href="#1133">Bước 3: Nhập SHĐ</a><br>
+            <a href="#1134">Bước 4: Chọn vào mục Thiết bị đang kết nối</a><br>
+            <a href="#1135">Bước 5: Kiểm tra thiết bị kết nối 2.4G & 5G</a><br>
+          </div>
+          <h4 id ='1131'>Bước 1: Đăng nhập Mỹ Bảo</h4>
           <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
           
 
-          <h4>Bước 2: Nhập Mã OTP</h4>
+          <h4 id ='1132'>Bước 2: Nhập Mã OTP</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
          
 
-          <h4>Bước 3: Nhập SHĐ</h4>
+          <h4 id ='1133'>Bước 3: Nhập SHĐ</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
           
-          <h4>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+          <h4 id ='1134'>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
           
-          <h4>Bước 5: Kiểm tra thiết bị kết nối 2.4G & 5G</h4>
+          <h4 id ='1135'>Bước 5: Kiểm tra thiết bị kết nối 2.4G & 5G</h4>
           <img 
           src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục kiểm tra thiết bị kết nối 2.4G, or 5G.png">
           
         </div>
 
         <div id="wifi-cant-use" class="content-section">
-          <h2>Không sử dụng được wifi</h2>
+          <h1>Không sử dụng được wifi</h1>
+          <h4>Tình trạng:</h4>
           <ul>
             <li>Kết nối được WiFi nhưng không truy cập được Internet</li>
             <li>Không kết nối được WiFi</li>
             <li>Không thấy tên WiFi</li>
           </ul>
+
+          <div class = 'content1'>
+            <h2>Kết nối được WiFi nhưng không truy cập được Internet</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>Anh/Chị bị tất cả thiết bị hay 1 thiết bị nào đó ạ ?</li>
+              </ul>
+              <a href="#" onclick="showContent('cause4')"
+                        >Thiết bị của khách hàng bị chặn trên HiFPT</a><br>
+                <a href="#" onclick="showContent('cause5')"
+                        >Thiết bị modem không có Internet</a>
+              </div>
+          </div>
+          <div class = 'content1'>
+          <h2>Không kết nối được WiFi</h2>
+            <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị kết nối đúng tên wifi và mật khẩu nhà mình chưa ạ?
+              </li>
+              <li>
+                Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+              </li>
+            </ul>
+            <a href="#" onclick="showContent('cause6')"
+            >Thiết bị Modem Wi-Fi treo</a><br>
+            <a href="#" onclick="showContent('cause7')"
+                        >Kết nối không đúng tên wifi và mật khẩu</a><br>
+            <a href="#" onclick="showContent('cause8')"
+                        >Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+                        không thu được sóng</a><br>
+            </div>
+          </div>
+          <div class = 'content1'>
+            <h2>Không thấy tên WiFi</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Anh/Chị kiểm tra thiết bị modem đã được cắm nguồn hoặc bật nút
+                  nguồn chưa ?
+                </li>
+                <li>
+                  Đèn WLAN (2.4 - 5G) của modem có sáng không ạ ?
+                </li>
+                <li>
+                  Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+                </li>
+              </ul>
+              <a href="#" onclick="showContent('cause9')"
+              >Thiết bị modem chưa được bật nguồn hoặc lỏng ổ điện</a><br>
+              <a href="#" onclick="showContent('cause10')"
+                          >Kết nối không đúng tên wifi và mật khẩu</a><br>
+              <a href="#" onclick="showContent('cause11')"
+                          >Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+                          không thu được sóng</a><br>
+            </div>
+          </div>
         </div>
 
-        <div id="connectwf-nointernet" class="content-section">
+
+        <!-- <div id="connectwf-nointernet" class="content-section">
           <h2>Kết nối được WiFi nhưng không truy cập được Internet</h2>
           <div class="problem-details">
             <h3>Câu hỏi khai thác</h3>
             <ul>
               <li>Anh/Chị bị tất cả thiết bị hay 1 thiết bị nào đó ạ ?</li>
+              
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div id="cause4" class="content-section">
           <h2>Nguyên nhân: Thiết bị của khách hàng bị chặn trên HiFPT</h2>
@@ -518,18 +653,27 @@
             </ul>
           </div>
           <h3>Cách giải quyết chi tiết:</h3>
-          <h4>Bước 1: Đăng nhập HiFPT</h4>
+
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1211">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1212">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1213">Bước 3: Vào phần Chặn thiết bị</a><br>
+            <a href="#1214">Bước 4: Cho phép thiết bị kết nối Internet</a><br>
+          </div>
+
+          <h4 id="1211">Bước 1: Đăng nhập HiFPT</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/1.jpg">
           
 
-          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <h4 id="1212">Bước 2: Vào phần Quản lý Internet</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/2.jpg">      
          
 
-          <h4>Bước 3: Vào phần Chặn thiết bị</h4>
+          <h4 id="1213">Bước 3: Vào phần Chặn thiết bị</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/3.jpg">      
           
-          <h4>Bước 4: Cho phép thiết bị kết nối Internet</h4>
+          <h4 id="1214">Bước 4: Cho phép thiết bị kết nối Internet</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/4.jpg"> 
         </div>
 
@@ -585,11 +729,17 @@
             </ul>
           </div>
           <h3>Cách giải quyết chi tiết:</h3>
-          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1221">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1222">Bước 2: Vào phần Quản lý Internet</a><br>
+
+          </div>
+          <h4 id ="1221">Bước 1: Đăng nhập HiFPT</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/1.jpg">
           
 
-          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <h4 id ="1222">Bước 2: Vào phần Quản lý Internet</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/2.jpg">      
          
         </div>
@@ -609,14 +759,22 @@
             </ul>
           </div>
           <h3>Cách giải quyết chi tiết:</h3>
-          <h4>Bước 1: Đăng nhập HiFPT</h4>
+
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1231">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1232">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1233">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi"</a><br>
+
+          </div>
+          <h4 id="1231">Bước 1: Đăng nhập HiFPT</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
           
 
-          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <h4 id="1232">Bước 2: Vào phần Quản lý Internet</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
         
-          <h4>Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
+          <h4 id="1233">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
          
         </div>
@@ -667,14 +825,21 @@
                 <h4>Rút nguồn và cắm lại</h4></li>
           <li>
           <h4>Bật Wifi trên ứng dụng HiFPT</h4>
-          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1321">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1322">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1323">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Bật WiFi"</a><br>
+
+          </div>
+          <h4 id="1321">Bước 1: Đăng nhập HiFPT</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
           
 
-          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <h4 id="1322">Bước 2: Vào phần Quản lý Internet</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
         
-          <h4>Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Bật WiFi" </h4>
+          <h4 id="1323">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Bật WiFi" </h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
         </li>
         </ol>
@@ -707,14 +872,21 @@
             </ul>
           </div>
           <h3>Cách giải quyết chi tiết:</h3>
-          <h4>Bước 1: Đăng nhập HiFPT</h4>
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1341">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1342">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1343">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi"</a><br>
+
+          </div>
+          <h4 id="1341">Bước 1: Đăng nhập HiFPT</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
           
 
-          <h4>Bước 2: Vào phần Quản lý Internet</h4>
+          <h4 id="1342">Bước 2: Vào phần Quản lý Internet</h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
         
-          <h4>Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
+          <h4 id="1343">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
           <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
          
         </div>
@@ -968,14 +1140,19 @@
             </ul>
           </div>
           <h3>Cách xử lý chi tiết:</h3>
-          <ol>
-            <li>Kiểm tra đèn LAN trên thiết bị Modem</li>
-            <h4>Hướng dẫn kiểm tra kết nối Lan</h4>
-            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xủ lý 1_IPTVI.jpg">
-            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xử lý 1_OTT.jpg">
-            <li>Kiểm tra kết nối WiFi trên box</li>
-            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/hướng xử lý 5.png">
-          </ol>
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#2311">1. Kiểm tra đèn LAN trên thiết bị Modem</a><br>
+            <a href="#2312">2. Kiểm tra kết nối WiFi trên box</a><br>
+          </div>
+          <h4 id ="2311">Kiểm tra đèn LAN trên thiết bị Modem</h4>
+          <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xủ lý 1_IPTVI.jpg">
+          <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xử lý 1_OTT.jpg">
+          
+
+          <h4 id ="2312">Kiểm tra kết nối WiFi trên box</h4>
+          <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/hướng xử lý 5.png">   
+        
         </div>
 
         <div id="cause22" class="content-section">
@@ -1033,24 +1210,166 @@
 
         <div id="device-information1" class="content-section">
           <h2>WiFi 5</h2>
-          <div class="problem-details">
+
+          <div class="entry">
+            <p>
+              Công nghệ Wifi 5 là công nghệ thế hệ thứ 5 , ứng dụng và hoạt động đồng thời cùng một lúc trên hai băng tần 5Ghz và 2.4Ghz , hỗ trợ MU-MIMO , vùng phủ sóng rộng và tương thích hoàn toàn với các chuẩn Wifi cũ ( a/b/g/n)
+            </p>
+            <div class="box shadow">
+              <div class ="box-inner-block">
+                Wifi 5 (<strong>802.11ac</strong>)  để trải nghiệm tốc độ đường truyền lên đến hơn 1730Mbps – hơn hẳn với tốc độ tối đa là 600Mbps (<strong>802.11n</strong>)  ở chuẩn wifi 4.
+			
+              </div>
+            </div>
+            <h4>Đặc điểm nổi bật của WiFi thế hệ 5:</h4>
+            <ol>
+              <li><strong>Băng thông kênh truyền rộng hơn:</strong>Wifi 5 (chuẩn 802.11ac) hoạt động trên băng tần 5GHz với độ rộng của băng thông có thể dễ dàng tùy chọn như 20MHz, 40MHz, 60MHz, 80MHz, 120MHz và 160MHz. Trong khi đó wifi chuẩn 802.11n truyền thống chỉ hỗ trợ duy nhất với băng thông 20MHz và 40MHz. Băng thông rộng đồng nghĩa với việc gia tăng tốc độ truyền nhận, đổi lại sẽ giảm số kênh truyền. Điều này băng thông rộng hơn sẽ giúp việc truyền tải giữ liệu giữa hai thiết bị trở nên nhanh hơn.</li>
+              <li><strong>Nhiều luồng dữ liệu hơn:</strong>Spatial stream là một luồng dữ liệu được truyền đi bằng công nghệ đa anten MIMO. Thiết bị nhiều hơn 1 anten có thể phát đi cùng lúc nhiều luồng tín hiệu. Trong khi wifi 4 chỉ hỗ trợ tối đa 4 luồng spatial stream thì wifi 5 con số này lại được nâng lên gấp đôi. Điều này sẽ tương đương với 8 anten hỗ trợ xử lý thông tin và truyền nhận dữ liệu.</li>
+              <li><strong>Hỗ trợ Multi user – MIMO:</strong>Ở wifi chuẩn n, một thiết bị có thể truyền nhiều spatial stream song chỉ nhắm đến một điểm duy nhất, nghĩa là chỉ một thiết bị (hoặc một người dùng) có thể nhận được dữ liệu ở một thời điểm. Do đó công nghệ MIMO trên wifi 4 được gọi là single – user MIMO (SU – MIMO).Wifi chuẩn ac đã được nâng cấp công nghệ mới với tên gọi multi – user MIMO. Công nghệ này cho phép một access point sử dụng nhiều anten để truyền tín hiệu đến nhiều thiết bị (hoặc nhiều người dùng) cùng lúc và trên một băng tần.</li>
+              <li><strong>Beamforimg:</strong>Các thiết bị 802.11 ac sử dụng công nghệ để tạo định hướng tín hiệu truyền nhận gọi là beamforming (hiểu đơn giản là “tạo ra một chùm tín hiệu”). Nhờ việc tích hợp beamforming mà router wifi 5 có thể xác định được vị trí của thiết bị nhận (ví dụ như smartphone, laptop hay tablet). Sau đó, năng lượng tín hiệu được đẩy lên mức mạnh hơn hướng về thiết bị đó.</li>
+              <li><strong>Tầm phủ sóng rộng hơn:</strong>Theo biểu đồ do Netgear cung cấp, cùng sở hữu 3 anten nhưng router dùng chuẩn wifi 5 cho tầm phủ sóng rộng 90 mét , router dùng chuẩn wifi 4 chỉ cho vùng phủ sóng tối đa là 80 mét . Điều này chứng tỏ wifi 5 có vùng phủ sóng hơn hơn so với wifi 4.</li>
+              <li><strong>Tương thích ngược với các chuẩn cũ:</strong>Đa số các router wifi hỗ trợ chuẩn wifi 5 đều hỗ trợ các chuẩn cũ gồm b/g/n và các router này đều là loại băng tần kép hỗ trợ song song băng tần 2.4Ghz và 5Ghz. Nếu băng tần 2.4GHz được sử dụng để phát wifi chuẩn n, thì băng tần 5GHz sẽ dùng để phát wifi chuẩn ac. Khả năng phát song song giúp tốc độ tối đa do nhà sản xuất công bố sẽ là “phép cộng” của tốc độ tối đa trên dải 2.4GHz và 5GHz. Ví dụ, Home Wifi ZTE H196A có tốc độ tối đa là 1200Mbps, bao gồm 867Mbps cho chuẩn ac ở băng tần 5GHz và 300Mbps cho chuẩn n ở băng tần 2.4GHz.</li>
+              <img src="https://i0.wp.com/fpti.vn/wp-content/uploads/2022/10/wifi-chuan-ac-wifi-5-la-gi.jpg?resize=768%2C432&ssl=1">
+
+              
+
+
+            </ol>
           </div>
         </div>
 
         <div id="cause25" class="content-section">
+          <h2>Modem AC1000Cv2</h2>
+          <img src="./Information/Wifi5/AC1000Cv2.png">
+        </div>
+
+        <div id="cause26" class="content-section">
+          <h2>Modem AC1000Cv3</h2>
+          <img src="./Information/Wifi5/AC1000Cv3.png">
+        </div>
+
+        <div id="cause27" class="content-section">
+          <h2>Modem AC1000F</h2>
+          <img src="./Information/Wifi5/AC1000F.png">
+        </div>
+
+        <div id="cause28" class="content-section">
+          <h2>Modem AC1000HI</h2>
+          <img src="./Information/Wifi5/AC1000HI.png">
+        </div>
+
+        <div id="cause29" class="content-section">
           <h2>Modem AC1000Z</h2>
-          <img src="./route wifi 6/6.png">
+          <img src="./Information/Wifi5/AC1000Z.png">
+        </div>
+
+        <div id="cause30" class="content-section">
+          <h2>Modem AC1200C</h2>
+          <img src="./Information/Wifi5/AC1200C.png">
+        </div>
+
+        <div id="cause31" class="content-section">
+          <h2>Modem AC1200Z</h2>
+          <img src="./Information/Wifi5/AC1200Z.png">
         </div>
 
         <div id="device-information2" class="content-section">
           <h2>WiFi 6</h2>
           <div class="problem-details">
+            <h2>1. Wifi 6 là gì?</h2>
+            <p>Như một bước tiến vượt bậc, Internet Wifi thông minh Wi-Fi 6 không chỉ đơn giản là một tiêu chuẩn mới mà còn là cột mốc quan trọng, mở ra những tiềm năng mới cho mạng không dây. Và đối với người dùng FPT, WiFi 6 là một công nghệ tiên tiến mà còn là một trải nghiệm kết nối đỉnh cao, mang tới những tiện ích và ưu điểm không ngờ.</p>
+            <h2>2. Wifi 6 FPT  - Internet wifi thông minh là gì?
+            </h2>
+            <p>Wifi 6 là một chuẩn kết nối internet wifi thông minh mới nhất của FPT. FPT Wi-Fi 6 có nhiều cải tiến hơn so với các tiêu chuẩn trước, như tăng tốc độ, dung lượng, hiệu quả và bảo mật của mạng không dây, dưới đây là một số ưu điểm của wifi 6 fpt.</p>
+            <h3>2.1. Tương Thích Tốt Hơn</h3>
+            <p>Tất cả trong một: Hoạt động trên cả hai loại tần số 2.4GHz và 5GHz, FPT Wifi 6 tạo ra sự linh hoạt đáng kể. Điện thoại, laptop hay bất kỳ thiết bị thông thường nào cũng có thể tận hưởng lợi ích của tần số cao và thấp, trong khi các thiết bị smarthome, camera hay robot chỉ hỗ trợ tần số thấp cũng sẽ được hưởng lợi tối đa. 
+            </p>
+            <img src="https://lh7-us.googleusercontent.com/1tnduM6AWy2xRRbgE3HQr5invoYyz_4nrKxk05ehqEZjesRF9hJGbJq7gDxuONWzYu9HstUvqSgCS5O-2X4hU7BnaWgsZ7eV904PwBTZSmyWzoGL8mo-GvSDtpV90LDf2XR1tyRvubFy4JOhFk6gJO0">
+            <h3>2.2 Tốc Độ Siêu Nhanh</h3>
+            <p>Nhanh Chóng Và Liên Tục: Internet wifi thông minh FPT Wi-Fi 6 mang lại tốc độ đột phá, với việc gấp 3-5 lần nhanh hơn so với các công nghệ trước đó. Để hiểu rõ hơn, hãy tưởng tượng một gói cước có băng thông lý thuyết là 1Gbps, khi sử dụng modem wifi 5 chỉ đạt khoảng 200-300 Mbps, nhưng với modem wifi 6, tốc độ có thể đạt tới 600-700 Mbps.
+            </p>
+            <h3>2.3. Ổn Định và Tiết Kiệm Hơn</h3>
+            <p>Kết Nối Mạng Ổn Định: Sử dụng các công nghệ tiên tiến như MU-MIMO và TWT, Internet wifi thông minh FPT Wi-Fi 6 đảm bảo rằng mọi thiết bị kết nối sẽ trải qua trải nghiệm mạng ổn định và liên tục. Điện thoại và laptop sẽ sử dụng mạng hiệu quả, trong khi đồng thời giúp tiết kiệm đáng kể pin, như một chiếc xe máy tay ga thông minh sử dụng tính năng tự động dừng xe để tiết kiệm năng lượng.
+            </p>
+            <p>Tiết Kiệm Pin: Internet wifi thông minh FPT Wi-Fi 6 có thể giúp tiết kiệm đến 67% lượng pin tiêu thụ, tạo điều kiện cho một trải nghiệm kết nối không chỉ nhanh chóng mà còn bền bỉ.
+            </p>
+            <h3>2.4. Bảo Mật Tối Ưu Dữ Liệu Của Bạn</h3>
+            <p>Mã Hóa Vững Chắc: Nhờ công nghệ WPA3, FPT Wi-Fi 6 đảm bảo rằng mọi dữ liệu truyền qua mạng đều được mã hóa một cách vững chắc. Giúp ngăn chặn mọi hình thức tấn công từ bên ngoài mà còn tạo ra một tầng bảo vệ mạnh mẽ cho thông tin cá nhân của bạn.
+            </p>
+            <h2>3. Công nghệ internet Wifi thông minh Wifi 6 FPT</h2>
+            <h3>3.1. Công nghệ chính của FPT Wi-Fi 6</h3>
+            <p>Sử dụng các công nghệ mới như:</p>
+            <p>Được hỗ trợ bởi MU-MIMO, thiết bị có khả năng xử lý đồng thời nhiều người dùng và giảm độ trễ. Tính năng Target Wake Time (TWT) giúp tiết kiệm năng lượng bằng cách đưa thiết bị vào chế độ "ngủ" khi không sử dụng, kéo dài tuổi thọ pin.</p>
+            <p>BSS Color giải quyết vấn đề tắc nghẽn và xung đột tần số sóng, đặc biệt quan trọng trong môi trường đô thị. Cuối cùng, tiêu chuẩn bảo mật WPA 3 đảm bảo an toàn cao cấp với mã hóa cá nhân và khả năng chống lại các cuộc tấn công.</p>
+            <img src="https://lh7-us.googleusercontent.com/hA1z59waTtZmexMzvkJrVWnH8qFeQcwOr72p9I3cpiSfgJPZt5jy13VjUUD0P-NfplStLyu0O06ffy5Raw-orGnCecGRgfQH7dVTUnjtigq-3p_oh7GOB60XyhadTCR2v5e3h5UxHR531xUjmlhJMJg">
+            <p>Với những tính năng này, Internet Wifi thông minh  không chỉ làm tăng tốc độ mạng, mà còn đảm bảo sự ổn định, tiết kiệm năng lượng và bảo mật mạng không dây cho trải nghiệm kết nối Internet vượt trội.</p>
+            <h3>3.2. Tốc độ wifi 6 trên điện thoại</h3>
+            <p>Tốc độ của internet wifi thông minh FPT Wi-Fi 6 trên điện thoại là một trong những ưu điểm nổi bật và quan trọng nhất của công nghệ này. Với sự kết hợp giữa tần số cao, khả năng tương thích và các công nghệ tiên tiến, FPT Wi-Fi 6 mang đến một trải nghiệm kết nối Internet tuyệt vời.
+            </p>
+            <p>Đặc biệt, tốc độ internet wifi thông minh của Wi-Fi 6 trên điện thoại gấp 3-5 lần so với các công nghệ trước đó. Ví dụ, khi so sánh với một gói cước có băng thông lý thuyết là 1Gbps, thì khi sử dụng modem Wifi 5, tốc độ chỉ đạt khoảng 200-300 Mbps. Tuy nhiên, khi chuyển sang sử dụng modem Wifi 6, tốc độ có thể đạt tới 600-700 Mbps, mang lại trải nghiệm truyền tải dữ liệu mượt mà và nhanh chóng.
+          </p>
+
+
+
+
+
+            
           </div>
         </div>
 
-        <div id="cause26" class="content-section">
+        <div id="cause32" class="content-section">
+          <h2>Modem AX1500C</h2>
+          <img src="./Information/Wifi6/AX1500C.png">
+        </div>
+
+        <div id="cause33" class="content-section">
+          <h2>Modem AX1800AZ</h2>
+          <img src="./Information/Wifi6/AX1800AZ.png">
+        </div>
+
+        <div id="cause34" class="content-section">
+          <h2>Modem AX1800C</h2>
+          <img src="./Information/Wifi6//AX1800C.png">
+        </div>
+
+        <div id="cause35" class="content-section">
+          <h2>Modem AX1800GZ</h2>
+          <img src="./Information/Wifi6//AX1800GZ.png">
+        </div>
+
+        <div id="cause36" class="content-section">
+          <h2>Modem AX3000AZ</h2>
+          <img src="./Information/Wifi6//AX3000AZ.png">
+        </div>
+
+        <div id="cause37" class="content-section">
+          <h2>Modem AX3000C</h2>
+          <img src="./Information/Wifi6//AX3000C.png">
+        </div>
+
+        <div id="cause38" class="content-section">
+          <h2>Modem AX3000Cv2</h2>
+          <img src="./Information/Wifi6//AX3000Cv2.png">
+        </div>
+
+        <div id="cause39" class="content-section">
           <h2>Modem AX3000GZ</h2>
-          <img src="./route wifi 6/25.png">
+          <img src="./Information/Wifi6//AX3000GZ.png">
+        </div>
+
+        <div id="cause40" class="content-section">
+          <h2>Modem AX3000GZv2</h2>
+          <img src="./Information/Wifi6//AX3000GZv2.png">
+        </div>
+
+        <div id="cause41" class="content-section">
+          <h2>Modem AX3000HI</h2>
+          <img src="./Information/Wifi6//AX3000HI.png">
+        </div>
+
+        <div id="cause42" class="content-section">
+          <h2>Modem AX8000C</h2>
+          <img src="./Information/Wifi6//AX8000C.png">
         </div>
 
         <div id="device-information3" class="content-section">
@@ -1059,9 +1378,49 @@
           </div>
         </div>
 
-        <div id="cause27" class="content-section">
+        <div id="cause43" class="content-section">
+          <h2>Router Aruba Instant On AP11</h2>
+          <img src="./Information/Router/Aruba Instant On AP11.png">
+        </div>
+
+        <div id="cause44" class="content-section">
+          <h2>Router EdgeRouter X</h2>
+          <img src="./Information/Router/EdgeRouter X.png">
+        </div>
+
+        <div id="cause45" class="content-section">
+          <h2>Router Mikrotik RB760iGS</h2>
+          <img src="./Information/Router/Mikrotik RB760iGS.png">
+        </div>
+
+        <div id="cause46" class="content-section">
+          <h2>Router Mikrotik RB4011iGSRM</h2>
+          <img src="./Information/Router/Mikrotik RB4011iGSRM.png">
+        </div>
+
+        <div id="cause47" class="content-section">
+          <h2>Router Unifi AC Lite</h2>
+          <img src="./Information/Router/Unifi AC Lite.png">
+        </div>
+
+        <div id="cause48" class="content-section">
+          <h2>Router Unifi AC LR</h2>
+          <img src="./Information/Router/Unifi AC LR.png">
+        </div>
+
+        <div id="cause49" class="content-section">
+          <h2>Router Unifi AC Pro</h2>
+          <img src="./Information/Router/Unifi AC Pro.png">
+        </div>
+
+        <div id="cause50" class="content-section">
           <h2>Router Vigor 300B</h2>
-          <img src="./route wifi 6/10.png">
+          <img src="./Information/Router/Vigor 300B.png">
+        </div>
+
+        <div id="cause51" class="content-section">
+          <h2>Router Vigor2927</h2>
+          <img src="./Information/Router/Vigor2927.png">
         </div>
 
       </div>
