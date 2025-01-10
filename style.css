@@ -6,7 +6,8 @@
 
 body {
     /* font-family: Arial, sans-serif; */
-    font-family:Aptos;
+    /* font-family:Aptos Display; */
+    font-family: sans-serif;
     line-height: 1.6;
 }
 
@@ -28,6 +29,7 @@ body {
     margin-left: 300px;
     padding: 20px;
     flex: 1;
+    background-color: #ede8e8;
     
 }
 .index{
@@ -112,9 +114,9 @@ h1 {
 }
 
 h2 {
-    color: #444;
+    color: #173de7;
     /* margin-bottom: 5px; */
-    font-size:15px;
+    font-size:20px;
 }
 
 h3 {
@@ -124,7 +126,7 @@ h3 {
 }
 
 h4, h5 {
-    color: #777;
+    color: #3a3535;
     margin: 5px 0;
 }
 li{
@@ -181,16 +183,15 @@ section {
 .problem-details li {
     /* margin: 5px 0; */
     line-height: 1.6;
+    font-size:17px;
 }
-.problem-details a {
-    color:#36a3af;
-}
+
 
 /* Thêm hiệu ứng hover cho các link trong sidebar */
 .menu ul li a {
     display: block;
     padding: 5px 0;
-    color:#3498db; 
+    color:#002bb8; 
     transition: all 0.3s ease;
     text-decoration: none;
     
@@ -325,24 +326,63 @@ section {
     }
 }
 
+.content2 img {
+    width: 60%;
+    height: auto;
+    padding-bottom:30px;
+}
+.content21 img {
+    width: 60%;
+    height: 500px;
+    padding-bottom:30px;
+}
+/* #cause4, #cause7, #cause8, #cause10, #cause18 img{
+    height:500px;    
+} */
+
+#cause25, #cause26,#cause27,#cause28,#cause29,#cause30,#cause31,#cause32,#cause33,#cause34,#cause35,#cause36,#cause37,#cause38,#cause39,#cause40,#cause41,#cause42,#cause43,#cause44,#cause45,#cause46,#cause47,#cause48,#cause49,#cause50,#cause51
+{
+    color:#365DFE;
+}
+
+.content1 h2{
+    color:#365DFE;
+}
+.content2 h2{
+    color:#365DFE;
+}
+.content2 h4{
+    text-align: center;
+    color:#3a3535;
+    font-size:17px;
+}
+
+.content21 h2{
+    color:#365DFE;
+}
+.content21 h4{
+    text-align: center;
+    color:#3a3535;
+    font-size:17px;
+}
+
+
 img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     object-fit: contain; /* Hoặc cover nếu muốn ảnh bao phủ toàn bộ */
+    
   }
+
   
-  .image-centered {
-    text-align: center;
-  }
-  
-  .image-container img {
+  /* .image-container img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-  }
+  } */
 
 /* Wifi5 */
 .entry {
@@ -363,9 +403,9 @@ img {
 .box div.box-inner-block {
    
     min-height: 50px;
-}
+}   
 .box {
-    padding: 20px;
+    padding: 5px;
     background-color: #F6F6F6;
     margin-bottom: 20px;
     word-wrap: break-word;
@@ -401,8 +441,13 @@ img {
 .problem-details a 
 {
     padding:5px;
-    font-size:15px;
-    text-decoration:underline;
+
+    font-size:18px;
+    
+    color:#36b;
+}
+.problem-details a::before{
+    content: "▸ ";  
 }
 .content1{
     padding:10px;
